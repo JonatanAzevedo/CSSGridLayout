@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .item1 { grid-area: header; }
+            .item2 { grid-area: main; }
+            .item3 { grid-area: right; }
+            .item4 { grid-area: footer; }
+            .item5 { grid-area: footer2; }
+
+            .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'main main main main right right'
+                'footer footer footer footer footer footer'
+                'footer2 footer2 footer2 footer2 footer2 footer2';
+            grid-gap: 10px;
+            background-color: #FFB6C1;
+            padding: 10px;
+            }
+
+            .grid-container > div {
+            background-color: #FFC0CB;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="grid-container">
+        <div class="item1">Teste de Grid Layout</div>
+        <div class="item2">Vem ai Batata</div>
+        <div class="item3">Como nunca vista antes</div>  
+        <div class="item4">Batata é um alimento muito delicioso feito pela grande Chef Natureza.</div>
+        <div class="item5">Pode ser preparada de diversas formas e em todas elas fica uma delicia, corre já para adquirir algumas no mercado mais próximo</div>
+        </div>
+
+    </body>
+</html>
